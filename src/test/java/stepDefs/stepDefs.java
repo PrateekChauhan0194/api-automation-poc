@@ -35,10 +35,10 @@ public class stepDefs extends Utils {
         createLogFile(logFileName);
     }
 
-    @Given("user has request payload ready")
-    public void user_has_request_payload_ready() throws IOException {
+    @Given("user has request payload ready for {string}")
+    public void user_has_request_payload_ready(String serviceName) throws IOException {
         resspec = new ResponseSpecBuilder().expectStatusCode(200).expectContentType(ContentType.JSON).build();
-        res=given().spec(requestSpecification())
+        res = given().spec(requestSpecification())
                 .body(data.addPlacePayload());
     }
 

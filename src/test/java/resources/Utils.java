@@ -19,7 +19,9 @@ public class Utils {
 
         RestAssured.baseURI = getGlobalPropValue("baseUrl");
 
-        req =new RequestSpecBuilder().setBaseUri(getGlobalPropValue("baseUrl")).addQueryParam("key", "qaclick123")
+        req =new RequestSpecBuilder()
+                .setBaseUri(getGlobalPropValue("baseUrl"))
+                .addQueryParam("key", "qaclick123")
                 .addFilter(RequestLoggingFilter.logRequestTo(log))
                 .addFilter(ResponseLoggingFilter.logResponseTo(log))
                 .setContentType(ContentType.JSON).build();
@@ -37,9 +39,5 @@ public class Utils {
         logFilePath = getGlobalPropValue("callLogsPath") + "/" + logFileName + ".txt";
         FileWriter fw = new FileWriter(logFilePath);
         fw.close();
-    }
-
-    public static void main(String[] args) throws IOException {
-
     }
 }
