@@ -12,8 +12,8 @@ import java.util.Properties;
 
 public class Utils {
     RequestSpecification req;
+    String logFilePath;
     public RequestSpecification requestSpecification() throws IOException {
-        String logFilePath = "logOutput.txt";
         FileOutputStream fos = new FileOutputStream(logFilePath);
         PrintStream log = new PrintStream(fos);
 
@@ -31,5 +31,15 @@ public class Utils {
         FileInputStream fis = new FileInputStream("src/test/java/resources/global.properties");
         prop.load(fis);
         return prop.getProperty(key).toString();
+    }
+
+    public void createLogFile(String logFileName) throws IOException {
+        logFilePath = getGlobalPropValue("callLogsPath") + "/" + logFileName + ".txt";
+        FileWriter fw = new FileWriter(logFilePath);
+        fw.close();
+    }
+
+    public static void main(String[] args) throws IOException {
+
     }
 }

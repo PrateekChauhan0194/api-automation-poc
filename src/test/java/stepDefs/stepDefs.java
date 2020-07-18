@@ -30,9 +30,13 @@ public class stepDefs extends Utils {
     Response response;
     TestDataBuild data = new TestDataBuild();
 
+    @Given("Logger file {string} is ready for logging")
+    public void loggerFileIsReadyForLogging(String logFileName) throws IOException {
+        createLogFile(logFileName);
+    }
+
     @Given("user has request payload ready")
     public void user_has_request_payload_ready() throws IOException {
-
         resspec = new ResponseSpecBuilder().expectStatusCode(200).expectContentType(ContentType.JSON).build();
         res=given().spec(requestSpecification())
                 .body(data.addPlacePayload());
@@ -45,9 +49,9 @@ public class stepDefs extends Utils {
     }
 
     @Then("API call is successful with status code {int}")
-    public void api_call_is_successful_with_status_code(Integer int1) {
+    public void api_call_is_successful_with_status_code(int expectedStatusCode) {
         System.out.println(response.getStatusCode());
-        assertEquals(response.getStatusCode(), 200);
+        assertEquals(response.getStatusCode(), expectedStatusCode);
     }
 
     @Then("{string} in response body is {string}")
