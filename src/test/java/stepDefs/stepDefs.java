@@ -1,5 +1,6 @@
 package stepDefs;
 
+import io.cucumber.datatable.DataTable;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
@@ -19,7 +20,9 @@ import resources.Utils;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.Iterator;
 import java.util.List;
+import java.util.Map;
 
 import static io.restassured.RestAssured.given;
 import static org.junit.Assert.assertEquals;
@@ -36,10 +39,11 @@ public class stepDefs extends Utils {
     }
 
     @Given("user has request payload ready for {string}")
-    public void user_has_request_payload_ready(String serviceName) throws IOException {
+    public void user_has_request_payload_ready(String serviceName, DataTable dt) throws IOException {
+        List<Map<String, String>> list = dt.asMaps(String.class, String.class);
         resspec = new ResponseSpecBuilder().expectStatusCode(200).expectContentType(ContentType.JSON).build();
         res = given().spec(requestSpecification())
-                .body(data.addPlacePayload());
+                .body(data.addPlacePayload(list));
     }
 
     @When("user calls {string} with POST http request")
