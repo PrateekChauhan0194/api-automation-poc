@@ -2,6 +2,7 @@ package resources;
 
 import pojo.AddPlace;
 import pojo.Location;
+import pojo.PostcodeLookup;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -36,5 +37,18 @@ public class TestDataBuild {
         p.setLocation(l);
 
         return p;
+    }
+
+
+    public PostcodeLookup postcodeLookupPayload(List<Map<String, String>> list) {
+        PostcodeLookup lookupData = new PostcodeLookup();
+
+        String customerType = list.get(0).get("customerType");
+        int postcode = Integer.parseInt(list.get(0).get("postcode"));
+
+        lookupData.setCustomerType(customerType);
+        lookupData.setPostcode(postcode);
+
+        return lookupData;
     }
 }
