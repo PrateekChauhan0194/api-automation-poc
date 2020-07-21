@@ -1,6 +1,6 @@
 package pojo;
 
-public class postcodeLookup {
+public class PostcodeLookup {
     private int postcode;
     private String customerType;
 
