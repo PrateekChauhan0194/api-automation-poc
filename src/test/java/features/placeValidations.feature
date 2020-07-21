@@ -12,4 +12,3 @@ Feature: Validating Place APIs
 		Examples:
 		|serviceName |contentType |expectedStatusCode |expectedStatus |expectedScope |
 		|AddPlaceAPI |JSON        |200                |OK             |APP           |
-
