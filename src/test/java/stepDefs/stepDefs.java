@@ -42,19 +42,34 @@ public class stepDefs extends Utils {
     public void user_has_request_payload_ready(String serviceName, DataTable dt) throws IOException {
         List<Map<String, String>> list = dt.asMaps(String.class, String.class);
         resspec = new ResponseSpecBuilder().expectStatusCode(200).expectContentType(ContentType.JSON).build();
-        res = given().spec(requestSpecification())
-                .body(data.addPlacePayload(list));
+        if(serviceName.equalsIgnoreCase("AddPlaceAPI")) {
+            res = given().spec(requestSpecification())
+                    .body(data.addPlacePayload(list));
+        } else if(serviceName.equalsIgnoreCase("postcodeLookup")) {
+            res = given().spec(requestSpecification())
+                    .body(data.postcodeLookupPayload(list));
+        } else {
+            System.err.println("Unable to create payload for selected service " + serviceName);
+        }
     }
 
     @When("user calls {string} with POST http request")
-    public void user_calls_with_post_http_request(String string) {
-        response =res.when().post("/maps/api/place/add/json").
-                then().spec(resspec).extract().response();
+    public void user_calls_with_post_http_request(String serviceName) {
+        if(serviceName.equalsIgnoreCase("AddPlaceAPI")) {
+            response = res.when().post("/maps/api/place/add/json").
+                    then().spec(resspec).extract().response();
+        } if(serviceName.equalsIgnoreCase("postcodeLookup")) {
+            response = res.when().post("qt2/app/v1/offers/lookup").
+                    then().spec(resspec).extract().response();
+        } else {
+            System.err.println("Unable to hit POST request for selected service " + serviceName);
+        }
     }
 
     @Then("API call is successful with status code {int}")
     public void api_call_is_successful_with_status_code(int expectedStatusCode) {
         System.out.println(response.getStatusCode());
+        System.out.println(response.asString());
         assertEquals(response.getStatusCode(), expectedStatusCode);
     }
 
@@ -62,7 +77,15 @@ public class stepDefs extends Utils {
     public void in_response_body_is(String key, String expectedValue) {
         String resp = response.asString();
         JsonPath js = new JsonPath(resp);
-        System.out.println(response.asString());
         assertEquals(js.get(key).toString(), expectedValue);
+    }
+
+    @When("user calls {string} with GET http request")
+    public void userCallsWithGETHttpRequest(String serviceName) {
+        if(serviceName.equalsIgnoreCase("")) {
+
+        } else {
+            System.err.println("Unable to hit GET request for selected service " + serviceName);
+        }
     }
 }

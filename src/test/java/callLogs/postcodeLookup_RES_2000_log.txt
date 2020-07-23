@@ -1,0 +1,1587 @@
+Request method:	POST
+Request URI:	https://www.energyaustralia.com.au/qt2/app/v1/offers/lookup
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "postcode": 2000,
+    "customerType": "RES"
+}
+HTTP/1.1 200 OK
+Content-Type: application/json
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 1; mode=block
+X-Frame-Options: DENY
+Vary: accept-encoding
+Content-Encoding: gzip
+Content-Length: 4330
+Expires: Tue, 21 Jul 2020 09:34:42 GMT
+Cache-Control: max-age=0, no-cache, no-store
+Pragma: no-cache
+Date: Tue, 21 Jul 2020 09:34:42 GMT
+Connection: keep-alive
+Strict-Transport-Security: max-age=31536000; includeSubDomains
+Referrer-Policy: same-origin
+Server: Apache
+
+{
+    "electricity": {
+        "status": "SUCCESS",
+        "accuracy": "POSTCODE",
+        "plans": [
+            {
+                "id": "BASE_RSOT-EN",
+                "code": "RSOT-EN",
+                "offerCode": "RSOT",
+                "fuelType": "ELE",
+                "customerType": "RES",
+                "disclaimerKey": "Disclaimer_BaseBasicHomeResi",
+                "sourceCode": "Basic",
+                "greenAvailable": true,
+                "updatedDate": null,
+                "conditions": {
+                    
+                },
+                "rewards": [
+                    {
+                        "conditions": [
+                            [
+                                {
+                                    "enabled": true,
+                                    "code": "MOVING"
+                                }
+                            ],
+                            [
+                                {
+                                    "enabled": true,
+                                    "code": "COR"
+                                }
+                            ]
+                        ],
+                        "sourceCode": "Basic_50"
+                    }
+                ],
+                "name": "Basic Home",
+                "description": "Standard rates with no discounts.",
+                "ribbon": null,
+                "colourCode": "#005321",
+                "repriceText": "Electricity usage rates and daily supply charge for this plan are variable. Our rates are generally reviewed around July each year and we'll let you know before this happens.",
+                "paymentTypeText": null,
+                "features": [
+                    {
+                        "conditions": [
+                            [
+                                {
+                                    "enabled": true,
+                                    "code": "MOVING"
+                                }
+                            ],
+                            [
+                                {
+                                    "enabled": true,
+                                    "code": "COR"
+                                }
+                            ]
+                        ],
+                        "title": "$50 Sign Up Credit",
+                        "text": "Get a $50 credit per new energy account on your first bill when you sign up.+"
+                    },
+                    {
+                        "conditions": null,
+                        "title": "Carbon neutral option",
+                        "text": "100% carbon neutral at no extra cost for your home energy when you opt in.^"
+                    },
+                    {
+                        "conditions": null,
+                        "title": "Default offer",
+                        "text": "For electricity, the Default Market Offer prices apply if you're on a flat tariff."
+                    }
+                ],
+                "postSelectFeatures": [
+                    {
+                        "conditions": [
+                            [
+                                {
+                                    "enabled": true,
+                                    "code": "CART"
+                                }
+                            ]
+                        ],
+                        "title": null,
+                        "text": "$50 Sign Up Credit. Get a $50 credit per new energy account on your first bill when you sign up.+"
+                    },
+                    {
+                        "conditions": [
+                            [
+                                {
+                                    "enabled": true,
+                                    "code": "MOVING"
+                                }
+                            ],
+                            [
+                                {
+                                    "enabled": true,
+                                    "code": "COR"
+                                }
+                            ]
+                        ],
+                        "title": null,
+                        "text": "$50 Sign Up Credit. Get a $50 credit per new energy account on your first bill when you sign up.+"
+                    },
+                    {
+                        "conditions": [
+                            [
+                                {
+                                    "enabled": true,
+                                    "code": "CART"
+                                }
+                            ]
+                        ],
+                        "title": null,
+                        "text": "Carbon neutral option. 100% carbon neutral at no extra cost for your home energy when you opt in.^"
+                    },
+                    {
+                        "conditions": [
+                            [
+                                {
+                                    "enabled": true,
+                                    "code": "CARBON"
+                                }
+                            ]
+                        ],
+                        "title": null,
+                        "text": "Carbon neutral option. 100% carbon neutral at no extra cost for your home energy when you opt in.^"
+                    },
+                    {
+                        "conditions": null,
+                        "title": null,
+                        "text": "Default offer. For electricity, Default Market Offer prices apply if you're on a flat tariff."
+                    }
+                ],
+                "benefitPeriod": "No",
+                "benefitPeriodDescription": "You'll receive your plan benefits for the duration of your benefit period.",
+                "rates": {
+                    "discountPercent": 0.0,
+                    "summary": {
+                        "type": "BENEFITS",
+                        "title": "Basic home energy",
+                        "description": "Standard plan",
+                        "keyFeaturesText": "Standard rate"
+                    },
+                    "type": "Variable",
+                    "typeDescription": "The Electricity market usage rates and daily supply charge are variable.",
+                    "pricingZone": "EA",
+                    "tariffType": "PKO",
+                    "tariffDescription": "flat tariff",
+                    "priceTagCode": "ENEAA_RS1",
+                    "supply": {
+                        "title": "Electricity Supply Charge per day",
+                        "baseRate": 0.847,
+                        "beforeTaxRate": 0.77,
+                        "uom": "$",
+                        "tariffType": "SUPPLY_CHARGE",
+                        "discountedRate": 0.847,
+                        "discountedBeforeTaxRate": 0.77
+                    },
+                    "green": {
+                        "title": "GREEN",
+                        "baseRate": 4.95,
+                        "beforeTaxRate": 4.5,
+                        "uom": "c/kWh"
+                    },
+                    "usage": [
+                        {
+                            "period": "",
+                            "values": [
+                                {
+                                    "title": "Peak usage per day",
+                                    "baseRate": 29.5592,
+                                    "beforeTaxRate": 26.872,
+                                    "uom": "c/kWh",
+                                    "tariffType": "PEAK",
+                                    "discountedRate": 29.5592,
+                                    "discountedBeforeTaxRate": 26.872
+                                }
+                            ]
+                        }
+                    ],
+                    "accuracy": "POSTCODE",
+                    "basedOnValue": "2000",
+                    "solarRates": [
+                        {
+                            "title": "FLAT_RATE",
+                            "baseRate": 10.5,
+                            "beforeTaxRate": 10.5,
+                            "uom": "c/kWh"
+                        }
+                    ],
+                    "installationMatchLevel": "BASC"
+                },
+                "charges": {
+                    "connectionFee": {
+                        "title": "Connection Fee",
+                        "baseRate": 12.243,
+                        "beforeTaxRate": 11.13,
+                        "uom": null
+                    },
+                    "meterInstallFee": null,
+                    "meteringCharge": null
+                },
+                "exitFees": [
+                    
+                ],
+                "exitFeeDescription": null,
+                "latePaymentFee": null,
+                "creditCardFeeVisaMC": {
+                    "title": "Visa and Mastercard",
+                    "baseRate": 0.36,
+                    "beforeTaxRate": 0.36,
+                    "uom": "%"
+                },
+                "creditCardFeeAmex": {
+                    "title": "American Express",
+                    "baseRate": 1.5,
+                    "beforeTaxRate": 1.5,
+                    "uom": "%"
+                },
+                "paperBillFee": null,
+                "distributor": {
+                    "distributor": "Ausgrid",
+                    "pricingZone": "EA",
+                    "fuelType": "ELE",
+                    "participantId": "ENERGYAP",
+                    "cisDivision": "NSW"
+                },
+                "benchmark": {
+                    "estimate": 1462,
+                    "comparisonPercent": 0,
+                    "benchmarkPlan": true,
+                    "type": "MARKET_REFERENCE"
+                },
+                "classification": "PUBLIC",
+                "hash": "fae3be9e89e42e3428c9bf16cbe13d01"
+            },
+            {
+                "id": "BASE_RCPP-EN",
+                "code": "RCPP-EN",
+                "offerCode": "RCPP",
+                "fuelType": "ELE",
+                "customerType": "RES",
+                "disclaimerKey": "Disclaimer_BaseNoFrillsResi",
+                "sourceCode": "NOFRILLS",
+                "greenAvailable": true,
+                "updatedDate": null,
+                "conditions": {
+                    
+                },
+                "rewards": [
+                    {
+                        "conditions": [
+                            [
+                                {
+                                    "enabled": true,
+                                    "code": "MOVING"
+                                }
+                            ],
+                            [
+                                {
+                                    "enabled": true,
+                                    "code": "COR"
+                                }
+                            ]
+                        ],
+                        "sourceCode": "NOFRILLS_50"
+                    }
+                ],
+                "name": "No Frills",
+                "description": "Simple low rates and built-in savings for 12 months.",
+                "ribbon": null,
+                "colourCode": "#005321",
+                "repriceText": null,
+                "paymentTypeText": null,
+                "features": [
+                    {
+                        "conditions": [
+                            [
+                                {
+                                    "enabled": true,
+                                    "code": "MOVING"
+                                }
+                            ],
+                            [
+                                {
+                                    "enabled": true,
+                                    "code": "COR"
+                                }
+                            ]
+                        ],
+                        "title": "$50 Sign Up Credit",
+                        "text": "Get a $50 credit per new energy account on your first bill when you sign up.+"
+                    },
+                    {
+                        "conditions": null,
+                        "title": "Carbon neutral option",
+                        "text": "100% carbon neutral at no extra cost for your home energy when you opt in.^"
+                    },
+                    {
+                        "conditions": null,
+                        "title": "Peace of mind",
+                        "text": "Your usage and supply charges won't increase for the fixed rate period. We'll let you know in advance before your rates change."
+                    }
+                ],
+                "postSelectFeatures": [
+                    {
+                        "conditions": [
+                            [
+                                {
+                                    "enabled": true,
+                                    "code": "CART"
+                                }
+                            ]
+                        ],
+                        "title": null,
+                        "text": "$50 Sign Up Credit. Get a $50 credit per new energy account on your first bill when you sign up.+"
+                    },
+                    {
+                        "conditions": [
+                            [
+                                {
+                                    "enabled": true,
+                                    "code": "MOVING"
+                                }
+                            ],
+                            [
+                                {
+                                    "enabled": true,
+                                    "code": "COR"
+                                }
+                            ]
+                        ],
+                        "title": null,
+                        "text": "$50 Sign Up Credit. Get a $50 credit per new energy account on your first bill when you sign up.+"
+                    },
+                    {
+                        "conditions": [
+                            [
+                                {
+                                    "enabled": true,
+                                    "code": "CART"
+                                }
+                            ]
+                        ],
+                        "title": null,
+                        "text": "Carbon neutral option. 100% carbon neutral at no extra cost for your home energy when you opt in.^"
+                    },
+                    {
+                        "conditions": [
+                            [
+                                {
+                                    "enabled": true,
+                                    "code": "CARBON"
+                                }
+                            ]
+                        ],
+                        "title": null,
+                        "text": "Carbon neutral option. 100% carbon neutral at no extra cost for your home energy when you opt in.^"
+                    },
+                    {
+                        "conditions": null,
+                        "title": null,
+                        "text": "Peace of mind. Your usage and supply charges won't increase for the fixed rate period. We'll let you know in advance before your rates change."
+                    }
+                ],
+                "benefitPeriod": "1 year",
+                "benefitPeriodDescription": "You'll receive your plan benefits for at least the duration of your benefit period.",
+                "rates": {
+                    "discountPercent": 0.0,
+                    "summary": {
+                        "type": "USAGE",
+                        "title": "Simple low rates",
+                        "description": "Simplified energy pricing",
+                        "keyFeaturesText": "Low fixed rate"
+                    },
+                    "type": "Fix 12 mth",
+                    "typeDescription": "Your electricity usage and supply charges won't increase for the fixed rate period. We'll let you know in advance before your rates change.",
+                    "pricingZone": "EA",
+                    "tariffType": "PKO",
+                    "tariffDescription": "flat tariff",
+                    "priceTagCode": "ENEAA_ZR1907",
+                    "supply": {
+                        "title": "Electricity Supply Charge per day",
+                        "baseRate": 0.781,
+                        "beforeTaxRate": 0.71,
+                        "uom": "$",
+                        "tariffType": "SUPPLY_CHARGE",
+                        "discountedRate": 0.781,
+                        "discountedBeforeTaxRate": 0.71
+                    },
+                    "green": {
+                        "title": "GREEN",
+                        "baseRate": 4.95,
+                        "beforeTaxRate": 4.5,
+                        "uom": "c/kWh"
+                    },
+                    "usage": [
+                        {
+                            "period": "",
+                            "values": [
+                                {
+                                    "title": "Peak usage per day",
+                                    "baseRate": 25.3,
+                                    "beforeTaxRate": 23,
+                                    "uom": "c/kWh",
+                                    "tariffType": "PEAK",
+                                    "discountedRate": 25.3,
+                                    "discountedBeforeTaxRate": 23
+                                }
+                            ]
+                        }
+                    ],
+                    "accuracy": "POSTCODE",
+                    "basedOnValue": "2000",
+                    "solarRates": [
+                        {
+                            "title": "FLAT_RATE",
+                            "baseRate": 10.5,
+                            "beforeTaxRate": 10.5,
+                            "uom": "c/kWh"
+                        }
+                    ],
+                    "installationMatchLevel": "BASC"
+                },
+                "charges": {
+                    "connectionFee": {
+                        "title": "Connection Fee",
+                        "baseRate": 12.243,
+                        "beforeTaxRate": 11.13,
+                        "uom": null
+                    },
+                    "meterInstallFee": null,
+                    "meteringCharge": null
+                },
+                "exitFees": [
+                    
+                ],
+                "exitFeeDescription": null,
+                "latePaymentFee": {
+                    "title": "Late Payment Fee",
+                    "baseRate": 12,
+                    "beforeTaxRate": 12,
+                    "uom": "$"
+                },
+                "creditCardFeeVisaMC": {
+                    "title": "Visa and Mastercard",
+                    "baseRate": 0.36,
+                    "beforeTaxRate": 0.36,
+                    "uom": "%"
+                },
+                "creditCardFeeAmex": {
+                    "title": "American Express",
+                    "baseRate": 1.5,
+                    "beforeTaxRate": 1.5,
+                    "uom": "%"
+                },
+                "paperBillFee": null,
+                "distributor": {
+                    "distributor": "Ausgrid",
+                    "pricingZone": "EA",
+                    "fuelType": "ELE",
+                    "participantId": "ENERGYAP",
+                    "cisDivision": "NSW"
+                },
+                "benchmark": {
+                    "estimate": 1272,
+                    "comparisonPercent": -13,
+                    "benchmarkPlan": false,
+                    "type": "REGULAR"
+                },
+                "classification": "PUBLIC",
+                "hash": "e27e8c9563cef780d65588597d89efa1"
+            },
+            {
+                "id": "BASE_TOPH-EN-AUSGRID",
+                "code": "TOPH-EN",
+                "offerCode": "TOPH",
+                "fuelType": "ELE",
+                "customerType": "RES",
+                "disclaimerKey": "Disclaimer_BasePlanTotalPlanResi",
+                "sourceCode": "Total_16%GD",
+                "greenAvailable": true,
+                "updatedDate": null,
+                "conditions": {
+                    
+                },
+                "rewards": [
+                    {
+                        "conditions": [
+                            [
+                                {
+                                    "enabled": true,
+                                    "code": "MOVING"
+                                }
+                            ],
+                            [
+                                {
+                                    "enabled": true,
+                                    "code": "COR"
+                                }
+                            ]
+                        ],
+                        "sourceCode": "Total_16%GD_50"
+                    }
+                ],
+                "name": "Total Plan",
+                "description": "Great discount on your total energy bill guaranteed - every time.",
+                "ribbon": null,
+                "colourCode": "#005321",
+                "repriceText": null,
+                "paymentTypeText": null,
+                "features": [
+                    {
+                        "conditions": [
+                            [
+                                {
+                                    "enabled": true,
+                                    "code": "MOVING"
+                                }
+                            ],
+                            [
+                                {
+                                    "enabled": true,
+                                    "code": "COR"
+                                }
+                            ]
+                        ],
+                        "title": "$50 Sign Up Credit",
+                        "text": "Get a $50 credit per new energy account on your first bill when you sign up.+"
+                    },
+                    {
+                        "conditions": null,
+                        "title": "Carbon neutral option",
+                        "text": "100% carbon neutral at no extra cost for your home energy when you opt in.^"
+                    },
+                    {
+                        "conditions": null,
+                        "title": "Peace of mind",
+                        "text": "Your usage and supply charges won't increase for the fixed rate period. We'll let you know in advance before your rates change."
+                    },
+                    {
+                        "conditions": null,
+                        "title": "Discount off total energy bill",
+                        "text": "Guaranteed discount that applies to both energy usage rates and daily supply charges."
+                    }
+                ],
+                "postSelectFeatures": [
+                    {
+                        "conditions": [
+                            [
+                                {
+                                    "enabled": true,
+                                    "code": "CART"
+                                }
+                            ]
+                        ],
+                        "title": null,
+                        "text": "$50 Sign Up Credit. Get a $50 credit per new energy account on your first bill when you sign up.+"
+                    },
+                    {
+                        "conditions": [
+                            [
+                                {
+                                    "enabled": true,
+                                    "code": "MOVING"
+                                }
+                            ],
+                            [
+                                {
+                                    "enabled": true,
+                                    "code": "COR"
+                                }
+                            ]
+                        ],
+                        "title": null,
+                        "text": "$50 Sign Up Credit. Get a $50 credit per new energy account on your first bill when you sign up.+"
+                    },
+                    {
+                        "conditions": [
+                            [
+                                {
+                                    "enabled": true,
+                                    "code": "CART"
+                                }
+                            ]
+                        ],
+                        "title": null,
+                        "text": "Carbon neutral option. 100% carbon neutral at no extra cost for your home energy when you opt in.^"
+                    },
+                    {
+                        "conditions": [
+                            [
+                                {
+                                    "enabled": true,
+                                    "code": "CARBON"
+                                }
+                            ]
+                        ],
+                        "title": null,
+                        "text": "Carbon neutral option. 100% carbon neutral at no extra cost for your home energy when you opt in.^"
+                    },
+                    {
+                        "conditions": null,
+                        "title": null,
+                        "text": "Discount off total energy bill. Guaranteed discount that applies to both energy usage rates and daily supply charges."
+                    }
+                ],
+                "benefitPeriod": "1 year",
+                "benefitPeriodDescription": "You'll receive your plan benefits for at least the duration of your benefit period.",
+                "rates": {
+                    "discountPercent": 16.0,
+                    "summary": {
+                        "type": "DISCOUNT",
+                        "title": "Total energy bill discount",
+                        "description": "guaranteed",
+                        "keyFeaturesText": "Guaranteed discount that applies to both energy usage rates and daily supply charges."
+                    },
+                    "type": "Fix 12 mth",
+                    "typeDescription": "Your electricity usage and supply charges won't increase for the fixed rate period. We'll let you know in advance before your rates change.",
+                    "pricingZone": "EA",
+                    "tariffType": "PKO",
+                    "tariffDescription": "flat tariff",
+                    "priceTagCode": "ENEAA_NR2007",
+                    "supply": {
+                        "title": "Electricity Supply Charge per day",
+                        "baseRate": 0.847,
+                        "beforeTaxRate": 0.77,
+                        "uom": "$",
+                        "tariffType": "SUPPLY_CHARGE",
+                        "discountedRate": 0.71148,
+                        "discountedBeforeTaxRate": 0.6468
+                    },
+                    "green": {
+                        "title": "GREEN",
+                        "baseRate": 4.95,
+                        "beforeTaxRate": 4.5,
+                        "uom": "c/kWh"
+                    },
+                    "usage": [
+                        {
+                            "period": "",
+                            "values": [
+                                {
+                                    "title": "Peak usage per day",
+                                    "baseRate": 29.5592,
+                                    "beforeTaxRate": 26.872,
+                                    "uom": "c/kWh",
+                                    "tariffType": "PEAK",
+                                    "discountedRate": 24.829728,
+                                    "discountedBeforeTaxRate": 22.57248
+                                }
+                            ]
+                        }
+                    ],
+                    "accuracy": "POSTCODE",
+                    "basedOnValue": "2000",
+                    "solarRates": [
+                        {
+                            "title": "FLAT_RATE",
+                            "baseRate": 10.5,
+                            "beforeTaxRate": 10.5,
+                            "uom": "c/kWh"
+                        }
+                    ],
+                    "installationMatchLevel": "BASC"
+                },
+                "charges": {
+                    "connectionFee": {
+                        "title": "Connection Fee",
+                        "baseRate": 12.243,
+                        "beforeTaxRate": 11.13,
+                        "uom": null
+                    },
+                    "meterInstallFee": null,
+                    "meteringCharge": null
+                },
+                "exitFees": [
+                    
+                ],
+                "exitFeeDescription": null,
+                "latePaymentFee": {
+                    "title": "Late Payment Fee",
+                    "baseRate": 12,
+                    "beforeTaxRate": 12,
+                    "uom": "$"
+                },
+                "creditCardFeeVisaMC": {
+                    "title": "Visa and Mastercard",
+                    "baseRate": 0.36,
+                    "beforeTaxRate": 0.36,
+                    "uom": "%"
+                },
+                "creditCardFeeAmex": {
+                    "title": "American Express",
+                    "baseRate": 1.5,
+                    "beforeTaxRate": 1.5,
+                    "uom": "%"
+                },
+                "paperBillFee": null,
+                "distributor": {
+                    "distributor": "Ausgrid",
+                    "pricingZone": "EA",
+                    "fuelType": "ELE",
+                    "participantId": "ENERGYAP",
+                    "cisDivision": "NSW"
+                },
+                "benchmark": {
+                    "estimate": 1228,
+                    "comparisonPercent": -16,
+                    "benchmarkPlan": false,
+                    "type": "REGULAR"
+                },
+                "classification": "PUBLIC",
+                "hash": "478900a0dd82a2cf62166970187bec9b"
+            }
+        ],
+        "nmi": null,
+        "meterDetails": {
+            "nmiStatus": null,
+            "pricingZone": "EA",
+            "tariffType": "PKO",
+            "installationMatchLevel": "BASC",
+            "customerType": null,
+            "remoteEnergize": false,
+            "extinct": false,
+            "commercialIndustrial": false,
+            "greenField": false,
+            "embeddedNetworks": false,
+            "mram": false,
+            "controlledLoadTOU": false,
+            "incliningServiceCharges": false
+        },
+        "distributor": {
+            "distributor": "Ausgrid",
+            "pricingZone": "EA",
+            "fuelType": "ELE",
+            "participantId": "ENERGYAP",
+            "cisDivision": "NSW"
+        },
+        "frmp": "UNKNOWN"
+    },
+    "gas": {
+        "status": "SUCCESS",
+        "accuracy": "POSTCODE",
+        "plans": [
+            {
+                "id": "BASE_RSOT-GN",
+                "code": "RSOT-GN",
+                "offerCode": "RSOT",
+                "fuelType": "GAS",
+                "customerType": "RES",
+                "disclaimerKey": "Disclaimer_BaseBasicHomeResi",
+                "sourceCode": "Basic",
+                "greenAvailable": false,
+                "updatedDate": null,
+                "conditions": {
+                    
+                },
+                "rewards": [
+                    {
+                        "conditions": [
+                            [
+                                {
+                                    "enabled": true,
+                                    "code": "MOVING"
+                                }
+                            ],
+                            [
+                                {
+                                    "enabled": true,
+                                    "code": "COR"
+                                }
+                            ]
+                        ],
+                        "sourceCode": "Basic_50"
+                    }
+                ],
+                "name": "Basic Home",
+                "description": "Standard rates with no discounts.",
+                "ribbon": null,
+                "colourCode": "#005321",
+                "repriceText": "Gas usage rates and daily supply charge for this plan are variable. Our rates are generally reviewed around July each year and we'll let you know before this happens.",
+                "paymentTypeText": null,
+                "features": [
+                    {
+                        "conditions": [
+                            [
+                                {
+                                    "enabled": true,
+                                    "code": "MOVING"
+                                }
+                            ],
+                            [
+                                {
+                                    "enabled": true,
+                                    "code": "COR"
+                                }
+                            ]
+                        ],
+                        "title": "$50 Sign Up Credit",
+                        "text": "Get a $50 credit per new energy account on your first bill when you sign up.+"
+                    },
+                    {
+                        "conditions": null,
+                        "title": "Carbon neutral option",
+                        "text": "100% carbon neutral at no extra cost for your home energy when you opt in.^"
+                    }
+                ],
+                "postSelectFeatures": [
+                    {
+                        "conditions": [
+                            [
+                                {
+                                    "enabled": true,
+                                    "code": "CART"
+                                }
+                            ]
+                        ],
+                        "title": null,
+                        "text": "$50 Sign Up Credit. Get a $50 credit per new energy account on your first bill when you sign up.+"
+                    },
+                    {
+                        "conditions": [
+                            [
+                                {
+                                    "enabled": true,
+                                    "code": "MOVING"
+                                }
+                            ],
+                            [
+                                {
+                                    "enabled": true,
+                                    "code": "COR"
+                                }
+                            ]
+                        ],
+                        "title": null,
+                        "text": "$50 Sign Up Credit. Get a $50 credit per new energy account on your first bill when you sign up.+"
+                    },
+                    {
+                        "conditions": [
+                            [
+                                {
+                                    "enabled": true,
+                                    "code": "CART"
+                                }
+                            ]
+                        ],
+                        "title": null,
+                        "text": "Carbon neutral option. 100% carbon neutral at no extra cost for your home energy when you opt in.^"
+                    },
+                    {
+                        "conditions": [
+                            [
+                                {
+                                    "enabled": true,
+                                    "code": "CARBON"
+                                }
+                            ]
+                        ],
+                        "title": null,
+                        "text": "Carbon neutral option. 100% carbon neutral at no extra cost for your home energy when you opt in.^"
+                    }
+                ],
+                "benefitPeriod": "No",
+                "benefitPeriodDescription": "You'll receive your plan benefits for the duration of your benefit period.",
+                "rates": {
+                    "discountPercent": 0.0,
+                    "summary": {
+                        "type": "BENEFITS",
+                        "title": "Basic home energy",
+                        "description": "Standard plan",
+                        "keyFeaturesText": "Standard rate"
+                    },
+                    "type": "Variable",
+                    "typeDescription": "The Gas market usage rates and daily supply charge are variable.",
+                    "pricingZone": "AG",
+                    "tariffType": "RES",
+                    "tariffDescription": null,
+                    "priceTagCode": "GNAGA_GR",
+                    "supply": {
+                        "title": "Gas Supply Charge per day",
+                        "baseRate": 0.6644,
+                        "beforeTaxRate": 0.604,
+                        "uom": "$",
+                        "tariffType": "SUPPLY_CHARGE",
+                        "discountedRate": 0.6644,
+                        "discountedBeforeTaxRate": 0.604
+                    },
+                    "green": null,
+                    "usage": [
+                        {
+                            "period": "",
+                            "values": [
+                                {
+                                    "title": "First 20.712 MJ per day",
+                                    "baseRate": 4.1558,
+                                    "beforeTaxRate": 3.778,
+                                    "uom": "c/MJ",
+                                    "tariffType": "FIRST_PEAK",
+                                    "discountedRate": 4.1558,
+                                    "discountedBeforeTaxRate": 3.778
+                                },
+                                {
+                                    "title": "Next 20.384 MJ per day",
+                                    "baseRate": 2.8963,
+                                    "beforeTaxRate": 2.633,
+                                    "uom": "c/MJ",
+                                    "tariffType": "NEXT_PEAK",
+                                    "discountedRate": 2.8963,
+                                    "discountedBeforeTaxRate": 2.633
+                                },
+                                {
+                                    "title": "Next 49.315 MJ per day",
+                                    "baseRate": 2.7709,
+                                    "beforeTaxRate": 2.519,
+                                    "uom": "c/MJ",
+                                    "tariffType": "NEXT_PEAK",
+                                    "discountedRate": 2.7709,
+                                    "discountedBeforeTaxRate": 2.519
+                                },
+                                {
+                                    "title": "Next 2654.794 MJ per day",
+                                    "baseRate": 2.6609,
+                                    "beforeTaxRate": 2.419,
+                                    "uom": "c/MJ",
+                                    "tariffType": "NEXT_PEAK",
+                                    "discountedRate": 2.6609,
+                                    "discountedBeforeTaxRate": 2.419
+                                },
+                                {
+                                    "title": "Next 10964.384 MJ per day",
+                                    "baseRate": 2.5828,
+                                    "beforeTaxRate": 2.348,
+                                    "uom": "c/MJ",
+                                    "tariffType": "NEXT_PEAK",
+                                    "discountedRate": 2.5828,
+                                    "discountedBeforeTaxRate": 2.348
+                                },
+                                {
+                                    "title": "Balance of daily use",
+                                    "baseRate": 2.288,
+                                    "beforeTaxRate": 2.08,
+                                    "uom": "c/MJ",
+                                    "tariffType": "FINAL_PEAK",
+                                    "discountedRate": 2.288,
+                                    "discountedBeforeTaxRate": 2.08
+                                }
+                            ]
+                        }
+                    ],
+                    "accuracy": "POSTCODE",
+                    "basedOnValue": "2000",
+                    "solarRates": [
+                        
+                    ],
+                    "installationMatchLevel": "null"
+                },
+                "charges": {
+                    "connectionFee": {
+                        "title": "Connection Fee",
+                        "baseRate": 16.28,
+                        "beforeTaxRate": 14.8,
+                        "uom": null
+                    },
+                    "meterInstallFee": null,
+                    "meteringCharge": null
+                },
+                "exitFees": [
+                    
+                ],
+                "exitFeeDescription": null,
+                "latePaymentFee": null,
+                "creditCardFeeVisaMC": {
+                    "title": "Visa and Mastercard",
+                    "baseRate": 0.36,
+                    "beforeTaxRate": 0.36,
+                    "uom": "%"
+                },
+                "creditCardFeeAmex": {
+                    "title": "American Express",
+                    "baseRate": 1.5,
+                    "beforeTaxRate": 1.5,
+                    "uom": "%"
+                },
+                "paperBillFee": null,
+                "distributor": {
+                    "distributor": "Jemena",
+                    "pricingZone": "AG",
+                    "fuelType": "GAS",
+                    "participantId": "AGLGN",
+                    "cisDivision": "NSW"
+                },
+                "benchmark": {
+                    "estimate": null,
+                    "comparisonPercent": null,
+                    "benchmarkPlan": true,
+                    "type": "NONE"
+                },
+                "classification": "PUBLIC",
+                "hash": "1b18e6eae3227e6e4cda178ec59f2ab7"
+            },
+            {
+                "id": "BASE_RCPP-GN",
+                "code": "RCPP-GN",
+                "offerCode": "RCPP",
+                "fuelType": "GAS",
+                "customerType": "RES",
+                "disclaimerKey": "Disclaimer_BaseNoFrillsResi",
+                "sourceCode": "NOFRILLS",
+                "greenAvailable": false,
+                "updatedDate": null,
+                "conditions": {
+                    
+                },
+                "rewards": [
+                    {
+                        "conditions": [
+                            [
+                                {
+                                    "enabled": true,
+                                    "code": "MOVING"
+                                }
+                            ],
+                            [
+                                {
+                                    "enabled": true,
+                                    "code": "COR"
+                                }
+                            ]
+                        ],
+                        "sourceCode": "NOFRILLS_50"
+                    }
+                ],
+                "name": "No Frills",
+                "description": "Simple low rates and built-in savings for 12 months.",
+                "ribbon": null,
+                "colourCode": "#005321",
+                "repriceText": null,
+                "paymentTypeText": null,
+                "features": [
+                    {
+                        "conditions": [
+                            [
+                                {
+                                    "enabled": true,
+                                    "code": "MOVING"
+                                }
+                            ],
+                            [
+                                {
+                                    "enabled": true,
+                                    "code": "COR"
+                                }
+                            ]
+                        ],
+                        "title": "$50 Sign Up Credit",
+                        "text": "Get a $50 credit per new energy account on your first bill when you sign up.+"
+                    },
+                    {
+                        "conditions": null,
+                        "title": "Carbon neutral option",
+                        "text": "100% carbon neutral at no extra cost for your home energy when you opt in.^"
+                    },
+                    {
+                        "conditions": null,
+                        "title": "Peace of mind",
+                        "text": "Your usage and supply charges won't increase for the fixed rate period. We'll let you know in advance before your rates change."
+                    }
+                ],
+                "postSelectFeatures": [
+                    {
+                        "conditions": [
+                            [
+                                {
+                                    "enabled": true,
+                                    "code": "CART"
+                                }
+                            ]
+                        ],
+                        "title": null,
+                        "text": "$50 Sign Up Credit. Get a $50 credit per new energy account on your first bill when you sign up.+"
+                    },
+                    {
+                        "conditions": [
+                            [
+                                {
+                                    "enabled": true,
+                                    "code": "MOVING"
+                                }
+                            ],
+                            [
+                                {
+                                    "enabled": true,
+                                    "code": "COR"
+                                }
+                            ]
+                        ],
+                        "title": null,
+                        "text": "$50 Sign Up Credit. Get a $50 credit per new energy account on your first bill when you sign up.+"
+                    },
+                    {
+                        "conditions": [
+                            [
+                                {
+                                    "enabled": true,
+                                    "code": "CART"
+                                }
+                            ]
+                        ],
+                        "title": null,
+                        "text": "Carbon neutral option. 100% carbon neutral at no extra cost for your home energy when you opt in.^"
+                    },
+                    {
+                        "conditions": [
+                            [
+                                {
+                                    "enabled": true,
+                                    "code": "CARBON"
+                                }
+                            ]
+                        ],
+                        "title": null,
+                        "text": "Carbon neutral option. 100% carbon neutral at no extra cost for your home energy when you opt in.^"
+                    },
+                    {
+                        "conditions": null,
+                        "title": null,
+                        "text": "Peace of mind. Your usage and supply charges won't increase for the fixed rate period. We'll let you know in advance before your rates change."
+                    }
+                ],
+                "benefitPeriod": "1 year",
+                "benefitPeriodDescription": "You'll receive your plan benefits for at least the duration of your benefit period.",
+                "rates": {
+                    "discountPercent": 0.0,
+                    "summary": {
+                        "type": "USAGE",
+                        "title": "Simple low rates",
+                        "description": "Simplified energy pricing",
+                        "keyFeaturesText": "Low fixed rate"
+                    },
+                    "type": "Fix 12 mth",
+                    "typeDescription": "Your gas usage and supply charges won't increase for the fixed rate period. We'll let you know in advance before your rates change.",
+                    "pricingZone": "AG",
+                    "tariffType": "RES",
+                    "tariffDescription": null,
+                    "priceTagCode": "GNAGA_ZR2001",
+                    "supply": {
+                        "title": "Gas Supply Charge per day",
+                        "baseRate": 0.572,
+                        "beforeTaxRate": 0.52,
+                        "uom": "$",
+                        "tariffType": "SUPPLY_CHARGE",
+                        "discountedRate": 0.572,
+                        "discountedBeforeTaxRate": 0.52
+                    },
+                    "green": null,
+                    "usage": [
+                        {
+                            "period": "",
+                            "values": [
+                                {
+                                    "title": "Usage per day",
+                                    "baseRate": 2.97,
+                                    "beforeTaxRate": 2.7,
+                                    "uom": "c/MJ",
+                                    "tariffType": "PEAK",
+                                    "discountedRate": 2.97,
+                                    "discountedBeforeTaxRate": 2.7
+                                }
+                            ]
+                        }
+                    ],
+                    "accuracy": "POSTCODE",
+                    "basedOnValue": "2000",
+                    "solarRates": [
+                        
+                    ],
+                    "installationMatchLevel": "null"
+                },
+                "charges": {
+                    "connectionFee": {
+                        "title": "Connection Fee",
+                        "baseRate": 16.28,
+                        "beforeTaxRate": 14.8,
+                        "uom": null
+                    },
+                    "meterInstallFee": null,
+                    "meteringCharge": null
+                },
+                "exitFees": [
+                    
+                ],
+                "exitFeeDescription": null,
+                "latePaymentFee": {
+                    "title": "Late Payment Fee",
+                    "baseRate": 12,
+                    "beforeTaxRate": 12,
+                    "uom": "$"
+                },
+                "creditCardFeeVisaMC": {
+                    "title": "Visa and Mastercard",
+                    "baseRate": 0.36,
+                    "beforeTaxRate": 0.36,
+                    "uom": "%"
+                },
+                "creditCardFeeAmex": {
+                    "title": "American Express",
+                    "baseRate": 1.5,
+                    "beforeTaxRate": 1.5,
+                    "uom": "%"
+                },
+                "paperBillFee": null,
+                "distributor": {
+                    "distributor": "Jemena",
+                    "pricingZone": "AG",
+                    "fuelType": "GAS",
+                    "participantId": "AGLGN",
+                    "cisDivision": "NSW"
+                },
+                "benchmark": {
+                    "estimate": null,
+                    "comparisonPercent": null,
+                    "benchmarkPlan": false,
+                    "type": "NONE"
+                },
+                "classification": "PUBLIC",
+                "hash": "5f6c2092c83fb1756045bbc631397bd9"
+            },
+            {
+                "id": "BASE_TOPH-GN",
+                "code": "TOPH-GN",
+                "offerCode": "TOPH",
+                "fuelType": "GAS",
+                "customerType": "RES",
+                "disclaimerKey": "Disclaimer_BasePlanTotalPlanResi",
+                "sourceCode": "Total_16%GD",
+                "greenAvailable": false,
+                "updatedDate": null,
+                "conditions": {
+                    
+                },
+                "rewards": [
+                    {
+                        "conditions": [
+                            [
+                                {
+                                    "enabled": true,
+                                    "code": "MOVING"
+                                }
+                            ],
+                            [
+                                {
+                                    "enabled": true,
+                                    "code": "COR"
+                                }
+                            ]
+                        ],
+                        "sourceCode": "Total_16%GD_50"
+                    }
+                ],
+                "name": "Total Plan",
+                "description": "Great discount on your total energy bill guaranteed - every time.",
+                "ribbon": null,
+                "colourCode": "#005321",
+                "repriceText": null,
+                "paymentTypeText": null,
+                "features": [
+                    {
+                        "conditions": [
+                            [
+                                {
+                                    "enabled": true,
+                                    "code": "MOVING"
+                                }
+                            ],
+                            [
+                                {
+                                    "enabled": true,
+                                    "code": "COR"
+                                }
+                            ]
+                        ],
+                        "title": "$50 Sign Up Credit",
+                        "text": "Get a $50 credit per new energy account on your first bill when you sign up.+"
+                    },
+                    {
+                        "conditions": null,
+                        "title": "Carbon neutral option",
+                        "text": "100% carbon neutral at no extra cost for your home energy when you opt in.^"
+                    },
+                    {
+                        "conditions": null,
+                        "title": "Peace of mind",
+                        "text": "Your usage and supply charges won't increase for the fixed rate period. We'll let you know in advance before your rates change."
+                    },
+                    {
+                        "conditions": null,
+                        "title": "Discount off total energy bill",
+                        "text": "Guaranteed discount that applies to both energy usage rates and daily supply charges."
+                    }
+                ],
+                "postSelectFeatures": [
+                    {
+                        "conditions": [
+                            [
+                                {
+                                    "enabled": true,
+                                    "code": "CART"
+                                }
+                            ]
+                        ],
+                        "title": null,
+                        "text": "$50 Sign Up Credit. Get a $50 credit per new energy account on your first bill when you sign up.+"
+                    },
+                    {
+                        "conditions": [
+                            [
+                                {
+                                    "enabled": true,
+                                    "code": "MOVING"
+                                }
+                            ],
+                            [
+                                {
+                                    "enabled": true,
+                                    "code": "COR"
+                                }
+                            ]
+                        ],
+                        "title": null,
+                        "text": "$50 Sign Up Credit. Get a $50 credit per new energy account on your first bill when you sign up.+"
+                    },
+                    {
+                        "conditions": [
+                            [
+                                {
+                                    "enabled": true,
+                                    "code": "CART"
+                                }
+                            ]
+                        ],
+                        "title": null,
+                        "text": "Carbon neutral option. 100% carbon neutral at no extra cost for your home energy when you opt in.^"
+                    },
+                    {
+                        "conditions": [
+                            [
+                                {
+                                    "enabled": true,
+                                    "code": "CARBON"
+                                }
+                            ]
+                        ],
+                        "title": null,
+                        "text": "Carbon neutral option. 100% carbon neutral at no extra cost for your home energy when you opt in.^"
+                    },
+                    {
+                        "conditions": null,
+                        "title": null,
+                        "text": "Discount off total energy bill. Guaranteed discount that applies to both energy usage rates and daily supply charges."
+                    }
+                ],
+                "benefitPeriod": "1 year",
+                "benefitPeriodDescription": "You'll receive your plan benefits for at least the duration of your benefit period.",
+                "rates": {
+                    "discountPercent": 16.0,
+                    "summary": {
+                        "type": "DISCOUNT",
+                        "title": "Total energy bill discount",
+                        "description": "guaranteed",
+                        "keyFeaturesText": "Guaranteed discount that applies to both energy usage rates and daily supply charges."
+                    },
+                    "type": "Fix 12 mth",
+                    "typeDescription": "Your gas usage and supply charges won't increase for the fixed rate period. We'll let you know in advance before your rates change.",
+                    "pricingZone": "AG",
+                    "tariffType": "RES",
+                    "tariffDescription": null,
+                    "priceTagCode": "GNAGA_NR2007",
+                    "supply": {
+                        "title": "Gas Supply Charge per day",
+                        "baseRate": 0.6644,
+                        "beforeTaxRate": 0.604,
+                        "uom": "$",
+                        "tariffType": "SUPPLY_CHARGE",
+                        "discountedRate": 0.558096,
+                        "discountedBeforeTaxRate": 0.50736
+                    },
+                    "green": null,
+                    "usage": [
+                        {
+                            "period": "",
+                            "values": [
+                                {
+                                    "title": "First 20.712 MJ per day",
+                                    "baseRate": 4.1558,
+                                    "beforeTaxRate": 3.778,
+                                    "uom": "c/MJ",
+                                    "tariffType": "FIRST_PEAK",
+                                    "discountedRate": 3.490872,
+                                    "discountedBeforeTaxRate": 3.17352
+                                },
+                                {
+                                    "title": "Next 20.384 MJ per day",
+                                    "baseRate": 2.8963,
+                                    "beforeTaxRate": 2.633,
+                                    "uom": "c/MJ",
+                                    "tariffType": "NEXT_PEAK",
+                                    "discountedRate": 2.432892,
+                                    "discountedBeforeTaxRate": 2.21172
+                                },
+                                {
+                                    "title": "Next 49.315 MJ per day",
+                                    "baseRate": 2.7709,
+                                    "beforeTaxRate": 2.519,
+                                    "uom": "c/MJ",
+                                    "tariffType": "NEXT_PEAK",
+                                    "discountedRate": 2.327556,
+                                    "discountedBeforeTaxRate": 2.11596
+                                },
+                                {
+                                    "title": "Next 2654.794 MJ per day",
+                                    "baseRate": 2.6609,
+                                    "beforeTaxRate": 2.419,
+                                    "uom": "c/MJ",
+                                    "tariffType": "NEXT_PEAK",
+                                    "discountedRate": 2.235156,
+                                    "discountedBeforeTaxRate": 2.03196
+                                },
+                                {
+                                    "title": "Next 10964.384 MJ per day",
+                                    "baseRate": 2.5828,
+                                    "beforeTaxRate": 2.348,
+                                    "uom": "c/MJ",
+                                    "tariffType": "NEXT_PEAK",
+                                    "discountedRate": 2.169552,
+                                    "discountedBeforeTaxRate": 1.97232
+                                },
+                                {
+                                    "title": "Balance of daily use",
+                                    "baseRate": 2.288,
+                                    "beforeTaxRate": 2.08,
+                                    "uom": "c/MJ",
+                                    "tariffType": "FINAL_PEAK",
+                                    "discountedRate": 1.92192,
+                                    "discountedBeforeTaxRate": 1.7472
+                                }
+                            ]
+                        }
+                    ],
+                    "accuracy": "POSTCODE",
+                    "basedOnValue": "2000",
+                    "solarRates": [
+                        
+                    ],
+                    "installationMatchLevel": "null"
+                },
+                "charges": {
+                    "connectionFee": {
+                        "title": "Connection Fee",
+                        "baseRate": 16.28,
+                        "beforeTaxRate": 14.8,
+                        "uom": null
+                    },
+                    "meterInstallFee": null,
+                    "meteringCharge": null
+                },
+                "exitFees": [
+                    
+                ],
+                "exitFeeDescription": null,
+                "latePaymentFee": {
+                    "title": "Late Payment Fee",
+                    "baseRate": 12,
+                    "beforeTaxRate": 12,
+                    "uom": "$"
+                },
+                "creditCardFeeVisaMC": {
+                    "title": "Visa and Mastercard",
+                    "baseRate": 0.36,
+                    "beforeTaxRate": 0.36,
+                    "uom": "%"
+                },
+                "creditCardFeeAmex": {
+                    "title": "American Express",
+                    "baseRate": 1.5,
+                    "beforeTaxRate": 1.5,
+                    "uom": "%"
+                },
+                "paperBillFee": null,
+                "distributor": {
+                    "distributor": "Jemena",
+                    "pricingZone": "AG",
+                    "fuelType": "GAS",
+                    "participantId": "AGLGN",
+                    "cisDivision": "NSW"
+                },
+                "benchmark": {
+                    "estimate": null,
+                    "comparisonPercent": null,
+                    "benchmarkPlan": false,
+                    "type": "NONE"
+                },
+                "classification": "PUBLIC",
+                "hash": "0dc945e1d9639ba8356b1e9d615f3315"
+            }
+        ],
+        "mirn": null,
+        "fro": "UNKNOWN"
+    },
+    "postcode": "2000",
+    "state": "NSW",
+    "disclaimers": [
+        {
+            "key": "Shared_Ref_Fit",
+            "text": "<b>Reference price comparison and estimated annual cost</b><br/># Comparison to the electricity reference price is indicative only and required by regulation. The reference price is an estimate of the annual amount that an average electricity customer in your distribution area would pay assuming average annual household usage (which may vary depending on the distribution area and tariff type). Our Basic Home plan is the reference price for most tariff types. Estimated annual cost is based on average annual usage and may not reflect how you will be charged. Your actual electricity costs will depend on your tariff type and the amount of electricity you use. Find out more about the reference price  <a href='https://www.energyaustralia.com.au/home/help-and-support/faqs/dmo' target='_blank'>here</a>.<br><br><b>Solar feed-in tariffs</b><br/>^^ Feed-in tariffs (FiT) are paid to eligible customers in accordance with our solar FiT Terms & Conditions, available <a href='https://www.energyaustralia.com.au/conditions-pricing' target='_blank'>here</a>. We may vary our Retailer FiT rates and we'll let you know before this happens. Rates are GST-exclusive but we'll also pay you GST if you meet the requirements for GST registration for your solar generation. We are currently unable to set up your solar plan online.<br><br><b>$50 Sign Up Credit</b><br/>+ Offer available to VIC & NSW residential customers who sign up to an electricity or gas offer. Limit of one $50 credit per new energy account, per customer address. We may change or end this offer at any time. Credit will be applied to your first bill and is not transferable or redeemable for cash.</a>",
+            "sharedKeys": [
+                
+            ]
+        },
+        {
+            "key": "Shared_Carbon_New",
+            "text": "<br><br><b>Go Neutral</b><br/>^ Opt in and we will offset the carbon emissions from your electricity and/or gas usage from the 6-month anniversary of the date your EnergyAustralia account is established. We will let you know in advance if we withdraw Go Neutral. For more info and full terms visit <a href='https://www.energyaustralia.com.au/carbon-neutral' target='_blank'>energyaustralia.com.au/carbon-neutral</a>.",
+            "sharedKeys": [
+                
+            ]
+        },
+        {
+            "key": "Disclaimer_BaseBasicHomeResi",
+            "text": "<b>Basic Home</b><br/>* Basic Home is our standard offer. Also known as a 'standing offer', this is an ongoing plan with no discounts or other benefits. For eligible electricity customers charged on a flat tariff (with a controlled load, if applicable), Basic Home is our equivalent of the Default Market Offer and the reference price is regulated by the Australian Energy Regulator. For other customers, including gas customers, the rates are set by us. The rates for Basic Home may vary, either when the AER changes the reference price, or when we review our rates each year. We'll notify you before any rate change occurs.   Find out more about the Default Market Offer <a href=\"https://www.energyaustralia.com.au/home/help-and-support/faqs/dmo\" target=\"_blank\">here</a>.",
+            "sharedKeys": [
+                "Shared_Ref_Fit",
+                "Shared_Carbon_New"
+            ]
+        },
+        {
+            "key": "Disclaimer_BaseNoFrillsResi",
+            "text": "<b>No Frills</b><br/>* Offer only for eligible NSW residential customers. Not available in all areas or for all tariff types. Your usage and supply charges won't increase during the 12-month fixed rate period but other fees and charges (incl. solar feed-in tariffs & GreenPower) may vary. We may change or end this offer at any time.",
+            "sharedKeys": [
+                "Shared_Ref_Fit",
+                "Shared_Carbon_New"
+            ]
+        },
+        {
+            "key": "Disclaimer_BasePlanTotalPlanResi",
+            "text": "<b>Total Plan</b><br/>* Offer only for eligible NSW residential customers. Not available in all areas or for all tariff types. Guaranteed discount is off our market usage rates and daily supply charges (after solar credits, if any) and applies for the 12-month benefit period. Your usage and supply charges won't increase during the 12-month fixed rate period but other fees and charges (incl. solar feed-in tariffs & GreenPower) may vary. We may change or end this offer at any time.",
+            "sharedKeys": [
+                "Shared_Ref_Fit",
+                "Shared_Carbon_New"
+            ]
+        }
+    ]
+}
