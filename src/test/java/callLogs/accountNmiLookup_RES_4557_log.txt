@@ -1,0 +1,39 @@
+Request method:	POST
+Request URI:	https://latte.nonprod.digital.energyaustralia.com.au/qt2/app/v1/offers/lookup
+Proxy:			http://proxy.ealan.shinesolutions.com:3128
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "customerType": "RES",
+    "postcode": "4557",
+    "nmi": "3120068616",
+    "addCurrentPlan": true,
+    "electricityAccountNumber": "5492128824",
+    "qualifications": [
+        "LOYALTY"
+    ]
+}
+HTTP/1.1 500 Internal Server Error
+Content-Type: application/json
+Content-Length: 25
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 1; mode=block
+X-Frame-Options: DENY
+Expires: Thu, 23 Jul 2020 09:03:02 GMT
+Cache-Control: max-age=0, no-cache, no-store
+Pragma: no-cache
+Date: Thu, 23 Jul 2020 09:03:02 GMT
+Connection: close
+Strict-Transport-Security: max-age=31536000; includeSubDomains
+Referrer-Policy: same-origin
+Server: Apache
+X-Akamai-Staging: ESSL
+
+Error processing request.

@@ -10,6 +10,8 @@ import io.restassured.specification.RequestSpecification;
 import java.io.*;
 import java.util.Properties;
 
+import static io.restassured.specification.ProxySpecification.host;
+
 public class Utils {
     RequestSpecification req;
     String logFilePath;
@@ -25,6 +27,8 @@ public class Utils {
                 .addFilter(RequestLoggingFilter.logRequestTo(log))
                 .addFilter(ResponseLoggingFilter.logResponseTo(log))
                 .setContentType(ContentType.JSON).build();
+        RestAssured.proxy = host("proxy.ealan.shinesolutions.com").withPort(3128);
+
         return req;
     }
 

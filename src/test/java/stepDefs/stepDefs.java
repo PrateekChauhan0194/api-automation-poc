@@ -41,13 +41,17 @@ public class stepDefs extends Utils {
     @Given("user has request payload ready for {string}")
     public void user_has_request_payload_ready(String serviceName, DataTable dt) throws IOException {
         List<Map<String, String>> list = dt.asMaps(String.class, String.class);
-        resspec = new ResponseSpecBuilder().expectStatusCode(200).expectContentType(ContentType.JSON).build();
+        int expectedStatusCode = Integer.parseInt(list.get(0).get("expectedStatusCode"));
+        resspec = new ResponseSpecBuilder().expectStatusCode(expectedStatusCode).expectContentType(ContentType.JSON).build();
         if(serviceName.equalsIgnoreCase("AddPlaceAPI")) {
             res = given().spec(requestSpecification())
                     .body(data.addPlacePayload(list));
         } else if(serviceName.equalsIgnoreCase("postcodeLookup")) {
             res = given().spec(requestSpecification())
                     .body(data.postcodeLookupPayload(list));
+        } else if (serviceName.equalsIgnoreCase("accountNmiLookup")) {
+            res = given().spec(requestSpecification())
+                    .body(data.accountNmiLookupPayload(list));
         } else {
             System.err.println("Unable to create payload for selected service " + serviceName);
         }
@@ -58,7 +62,7 @@ public class stepDefs extends Utils {
         if(serviceName.equalsIgnoreCase("AddPlaceAPI")) {
             response = res.when().post("/maps/api/place/add/json").
                     then().spec(resspec).extract().response();
-        } if(serviceName.equalsIgnoreCase("postcodeLookup")) {
+        } if(serviceName.equalsIgnoreCase("postcodeLookup") || serviceName.equalsIgnoreCase("accountNmiLookup")) {
             response = res.when().post("qt2/app/v1/offers/lookup").
                     then().spec(resspec).extract().response();
         } else {

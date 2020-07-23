@@ -1,5 +1,6 @@
 package resources;
 
+import pojo.AccountNmiLookup;
 import pojo.AddPlace;
 import pojo.Location;
 import pojo.PostcodeLookup;
@@ -48,6 +49,29 @@ public class TestDataBuild {
 
         lookupData.setCustomerType(customerType);
         lookupData.setPostcode(postcode);
+
+        return lookupData;
+    }
+
+    public AccountNmiLookup accountNmiLookupPayload(List<Map<String, String>> list) {
+        AccountNmiLookup lookupData = new AccountNmiLookup();
+
+        String customerType = list.get(0).get("customerType");
+        String postcode = list.get(0).get("postcode");
+        String nmi = list.get(0).get("nmi");
+        Boolean addCurrentPlan = Boolean.parseBoolean(list.get(0).get("addCurrentPlan"));
+        String electricityAccountNumber = list.get(0).get("electricityAccountNumber");
+        String qualifications = list.get(0).get("qualifications");
+
+        lookupData.setCustomerType(customerType);
+        lookupData.setPostcode(postcode);
+        lookupData.setNmi(nmi);
+        lookupData.setAddCurrentPlan(addCurrentPlan);
+        lookupData.setElectricityAccountNumber(electricityAccountNumber);
+
+        List<String> myList = new ArrayList<String>();
+        myList.add(qualifications);
+        lookupData.setQualifications(myList);
 
         return lookupData;
     }
